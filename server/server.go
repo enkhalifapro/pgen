@@ -22,8 +22,6 @@ type Server struct {
 func (s *Server) Run() error {
 	// users APIs
 	s.Engine.GET("/", s.Controller.User.Root)
-	s.Engine.GET("/api/v1/users/id/:id", s.Controller.User.GetById)
-	s.Engine.GET("/api/v1/users/email/:email", s.Controller.User.GetByEmail)
-	s.Engine.GET("/api/v1/users/name/:name", s.Controller.User.GetBySlug)
+	s.Engine.GET("/api/v1/users", s.Controller.User.GetAll)
 	return s.Engine.Run(fmt.Sprintf("%v:%v", viper.GetString("host"), viper.GetString("port")))
 }

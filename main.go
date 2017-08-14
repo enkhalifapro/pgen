@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gitlab.com/enkhalifapro/ulearn-api/cmd"
+	"github.com/enkhalifapro/pgen/cmd"
 )
 
 func main() {

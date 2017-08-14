@@ -8,8 +8,7 @@ import (
 	"testing"
 
 	"github.com/gin-gonic/gin"
-	"gitlab.com/enkhalifapro/ulearn-api/db"
-	"gitlab.com/enkhalifapro/ulearn-api/utilities"
+	"github.com/enkhalifapro/pgen/db"
 )
 
 // Helper object gives us full initialized and prepared for work test server.
@@ -17,7 +16,6 @@ type Helper struct {
 	Test   *testing.T
 	Gin    *gin.Engine
 	DB     *db.DB            `inject:""`
-	ES     *utilities.EsUtil `inject:""`
 	Header http.Header
 
 	cleanCallback func()

@@ -5,8 +5,8 @@ import (
 
 	"github.com/facebookgo/inject"
 	"github.com/spf13/viper"
-	"gitlab.com/enkhalifapro/ulearn-api/config"
-	"gitlab.com/enkhalifapro/ulearn-api/db"
+	"github.com/enkhalifapro/pgen/config"
+	"github.com/enkhalifapro/pgen/db"
 )
 
 // Initialize element initialization.
