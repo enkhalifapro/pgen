@@ -1,0 +1,8 @@
+---
+db:
+  uri: "mongodb://localhost:27017"
+  tls:
+    enable: false
+log:
+  level: "DEBUG"
+  ginrus: false
