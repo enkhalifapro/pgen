@@ -19,4 +19,7 @@ func init() {
 	// level can be ERROR|WARNING|INFO|DEBUG.
 	viper.SetDefault("log.level", "ERROR")
 	viper.SetDefault("log.ginrus", true)
+
+	// SimilarTech settings.
+	viper.SetDefault("similar_tech.key", "apiKey")
 }
