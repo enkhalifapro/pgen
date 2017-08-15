@@ -5,10 +5,9 @@ import (
 	"time"
 )
 
-type Service struct {
-	ID     bson.ObjectId `bson:"_id" json:"id"`
-	Name   string `json:"name"`
-	Policy string `json:"policy"`
+type Category struct {
+	ID   bson.ObjectId `bson:"_id" json:"id"`
+	Name string `json:"name"`
 	CreatedAt time.Time     `json:"createdAt"`
 	UpdatedAt time.Time     `json:"updatedAt"`
 	UpdaterId string        `json:"updaterId"`
